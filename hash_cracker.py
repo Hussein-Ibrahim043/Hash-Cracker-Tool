@@ -10,6 +10,7 @@ import SHA1
 import SHA224
 import SHA512
 import SHA384
+import Tool_banner
 
 
 def main_menu():  
@@ -67,7 +68,7 @@ def main():
         time.sleep(3)
         print("No arguments provided. Running with file input mode (provide a file with hashes to crack).")
         os.system("clear" if os.name == "posix" else "cls")
-        subprocess.run(['python', 'Tool_banner.py'], check=True)
+        Tool_banner.main()
 
         while True:
             main_menu()
