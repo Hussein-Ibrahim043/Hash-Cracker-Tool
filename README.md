@@ -106,12 +106,14 @@ pip install -r requirements.txt
    git clone https://github.com/Hussein-Ibrahim043/Hash-Cracker-Tool.git
 
 2. Run the provided install.sh script to install the tool and set up an alias for easy usage.
-
-   `cd Hash-Cracker-Tool`
+```bash
+   cd Hash-Cracker-Tool
+```
 
 4. Run install.sh :
-
-   `sudo bash install.sh`
+  ```bash
+   sudo bash install.sh
+   ```
    
 The alias `hashcracker` will be created for the tool.
 
@@ -120,23 +122,31 @@ The alias `hashcracker` will be created for the tool.
 ## 🚀 How to Use
 1. Interactive Mode:
    Launch the script from the terminal:
-     - `hashcracker --interactive`
-2. Command-Line Arguments:
-   - `hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99`
+```bash
+   hashcracker --interactive
+```
+3. Command-Line Arguments:
+```bash
+   hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
+```
    **Command-Line Options**:
-     -`md5`: Crack an MD5 hash.
-     -`sha1`: Crack a SHA1 hash.
-     -`sha224`: Crack a SHA224 hash.
-     -`sha384`: Crack a SHA384 hash.
-     -`sha512`: Crack a SHA512 hash.
-     --`wordlist`: Specify the path to the wordlist.
-     `-t`: Provide a single target hash.
-     --f: Provide a file containing multiple hashes.
+   -`-md5`: Crack an MD5 hash.
+   -`-sha1`: Crack a SHA1 hash.
+   -`-sha224`: Crack a SHA224 hash.
+   -`-sha384`: Crack a SHA384 hash.
+   -`-sha512`: Crack a SHA512 hash.
+   -`--wordlist`: Specify the path to the wordlist.
+   -`-t`: Provide a single target hash.
+   -`--f`: Provide a file containing multiple hashes.
 **Examples**:
           1. Crack a single MD5 hash:
-               `hashcracker -md5 --wordlist wordlist.txt -t d41d8cd98f00b204e9800998ecf8427e`
+          ```bash
+               hashcracker -md5 --wordlist wordlist.txt -t d41d8cd98f00b204e9800998ecf8427e
+               ```
           2.Crack multiple SHA1 hashes from a file:
-               `hashcracker -sha1 --wordlist wordlist.txt --f hashes.txt`
+               ```bash
+               hashcracker -sha1 --wordlist wordlist.txt --f hashes.txt
+               ```
           
 ---
 
