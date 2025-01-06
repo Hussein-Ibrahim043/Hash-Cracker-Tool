@@ -1,3 +1,6 @@
+###Disclaimer
+#This tool is intended for educational purposes and ethical security testing only. Unauthorized use of this tool is prohibited.
+
 #!/bin/bash
 
 # Define the alias name and command
