@@ -1,5 +1,5 @@
 # Hash-Cracker-Tool
-## Overview
+## 📝Overview
 
 Welcome to the **Hash Cracker Tool**! This tool is designed for educational purposes, showcasing a simple Python-based hash cracking interface. It includes a variety of features, such as customizable banners and a clean user interface, which enhances the tool's overall functionality.
 This project is a powerful and flexible command-line tool for cracking various hash types using wordlists. It supports multiple hash algorithms, including MD5, SHA1, SHA224, SHA384, and SHA512. The tool offers both interactive and command-line modes, providing an efficient and user-friendly experience.
