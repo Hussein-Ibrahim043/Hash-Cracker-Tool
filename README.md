@@ -34,16 +34,16 @@ python hash_cracker.py --interactive
 python hash_cracker.py [OPTIONS]
 ```
   
--**Available Arguments:**
-  --interactive: Runs the tool in interactive mode.
-  -md5: Crack MD5 hash.
-  -sha1: Crack SHA1 hash.
-  -sha224: Crack SHA224 hash.
-  -sha384: Crack SHA384 hash.
-  -sha512: Crack SHA512 hash.
-  --wordlist [file]: Specify the wordlist file.
-  -t [hash]: Specify the target hash.
-  --f [file]: Specify a file containing multiple hashes.
+### Available Arguments:
+  - --interactive: Runs the tool in interactive mode.
+  - -md5: Crack MD5 hash.
+  - -sha1: Crack SHA1 hash.
+  - -sha224: Crack SHA224 hash.
+  - -sha384: Crack SHA384 hash.
+  - -sha512: Crack SHA512 hash.
+  - --wordlist [file]: Specify the wordlist file.
+  - -t [hash]: Specify the target hash.
+  - --f [file]: Specify a file containing multiple hashes.
 
 | Argument         | Description                                      |
 |------------------|--------------------------------------------------|
