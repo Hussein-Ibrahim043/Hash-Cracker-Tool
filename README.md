@@ -35,31 +35,20 @@ python hash_cracker.py [OPTIONS]
 ```
   
 ### Available Arguments:
-  - --interactive: Runs the tool in interactive mode.
-  - -md5: Crack MD5 hash.
-  - -sha1: Crack SHA1 hash.
-  - -sha224: Crack SHA224 hash.
-  - -sha384: Crack SHA384 hash.
-  - -sha512: Crack SHA512 hash.
-  - --wordlist [file]: Specify the wordlist file.
-  - -t [hash]: Specify the target hash.
-  - --f [file]: Specify a file containing multiple hashes.
+  - `--interactive`: Runs the tool in interactive mode.
+  - `-md5`: MD5 hash algorithm.
+  - `-sha1`: SHA1 hash algorithm.
+  - `-sha224`: SHA224 hash algorithm.
+  - `-sha384`: SHA384 hash algorithm.
+  - `-sha512`: SHA512 hash algorithm.
+  - `--wordlist [file]`: Specify the wordlist file.
+  - `-t [hash]`: Specify the target hash.
+  - `--f [file]`: Specify a file containing multiple hashes.
 
-| Argument         | Description                                      |
-|------------------|--------------------------------------------------|
-| `--interactive`  | Runs the tool in interactive mode.               |
-| `-md5`           | Crack an MD5 hash.                               |
-| `-sha1`          | Crack a SHA1 hash.                               |
-| `-sha224`        | Crack a SHA224 hash.                             |
-| `-sha384`        | Crack a SHA384 hash.                             |
-| `-sha512`        | Crack a SHA512 hash.                             |
-| `--wordlist [file]` | Specify the wordlist file.                    |
-| `-t [hash]`      | Specify the target hash.                         |
-| `--f [file]`     | Specify a file containing multiple hashes.       |
-
-
-  `python hash_cracker.py -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99`
-
+### Examples:
+```bash
+  python hash_cracker.py -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
+```
 
 Additionally, you need to specify:
 `--wordlist` for the wordlist file.
@@ -69,19 +58,13 @@ Additionally, you need to specify:
 ---
 
 ## Supported Hash Algorithms
-  MD5: `-md5`
-  SHA1: `-sha1`
-  SHA224: `-sha224`
-  SHA384: `-sha384`
-  SHA512: `-sha512`
-| Hash Type | Option  |
-|-----------|---------|
-| MD5       | -md5    |
-| SHA1      | -sha1   |
-| SHA224    | -sha224 |
-| SHA384    | -sha384 |
-| SHA512    | -sha512 |
+- MD5: `-md5`
+- SHA1: `-sha1`
+- SHA224: `-sha224`
+- SHA384: `-sha384`
+- SHA512: `-sha512`
 
+  
 ## 🛠️ Requirements
 - Python 3.13.1 or later
 - Required libraries:
@@ -130,22 +113,27 @@ The alias `hashcracker` will be created for the tool.
    hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
 ```
    **Command-Line Options**:
-   -`-md5`: Crack an MD5 hash.
-   -`-sha1`: Crack a SHA1 hash.
-   -`-sha224`: Crack a SHA224 hash.
-   -`-sha384`: Crack a SHA384 hash.
-   -`-sha512`: Crack a SHA512 hash.
-   -`--wordlist`: Specify the path to the wordlist.
-   -`-t`: Provide a single target hash.
-   -`--f`: Provide a file containing multiple hashes.
-**Examples**:
-          1. Crack a single MD5 hash:
-          ```bash
-               hashcracker -md5 --wordlist wordlist.txt -t d41d8cd98f00b204e9800998ecf8427e
-               ```
-          2.Crack multiple SHA1 hashes from a file:
-               ```bash
-               hashcracker -sha1 --wordlist wordlist.txt --f hashes.txt
+   - `-md5`: Crack an MD5 hash.
+   - `-sha1`: Crack a SHA1 hash.
+   - `-sha224`: Crack a SHA224 hash.
+   - `-sha384`: Crack a SHA384 hash.
+   - `-sha512`: Crack a SHA512 hash.
+   - `--wordlist`: Specify the path to the wordlist.
+   - `-t`: Provide a single target hash.
+   - `--f`: Provide a file containing multiple hashes.
+
+     
+### Examples:
+
+#### Crack a Single MD5 Hash:
+```bash
+hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
+```
+
+#### Crack Multiple SHA1 Hashes from a File:
+```bash
+hashcracker -sha1 --wordlist rockyou.txt --f hashes.txt
+```
                ```
           
 ---
