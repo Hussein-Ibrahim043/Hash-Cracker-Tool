@@ -99,8 +99,9 @@ pip install -r requirements.txt
    ```bash
    cd Hash-Cracker-Tool
    ```
-
-4. Run install.sh :
+3. Run the following command to make the script executable:
+   ```bash chmod +x install.sh```
+4.  Run install.sh :
    ```bash
    sudo bash install.sh
    ```
