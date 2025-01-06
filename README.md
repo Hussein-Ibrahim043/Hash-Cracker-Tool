@@ -14,23 +14,25 @@ This project is a powerful and flexible command-line tool for cracking various h
   - **SHA224**
   - **SHA384**
   - **SHA512**
-- Two operation modes:
+### Modes of Operation:
   - **Interactive Mode**: User-friendly mode for manual inputs.
   - **CLI Mode**: Efficient for automation and scripting.
-- Wordlist-based cracking.
-- Ability to handle single hashes or files containing multiple hashes.
-- Auto-completion for file paths using `readline`.
+  - **Wordlist-Based Cracking**: Utilize wordlists to attempt cracking.
+  - **Hash Input Options**:
+    - Single hash input.
+    - File containing multiple hashes.
+  - **Auto-completion** Supports file path auto-completion using readline.
 
 
 - **Interactive Mode**: Run the tool in interactive mode using the `--interactive` flag:
 ```bash
-- python hash_cracker.py --interactive
-
+python hash_cracker.py --interactive
+```
 
 - **CLI Mode**
 ```bash
-- python hash_cracker.py [OPTIONS]
-
+python hash_cracker.py [OPTIONS]
+```
   
 -**Available Arguments:**
   --interactive: Runs the tool in interactive mode.
@@ -42,6 +44,19 @@ This project is a powerful and flexible command-line tool for cracking various h
   --wordlist [file]: Specify the wordlist file.
   -t [hash]: Specify the target hash.
   --f [file]: Specify a file containing multiple hashes.
+
+| Argument         | Description                                      |
+|------------------|--------------------------------------------------|
+| `--interactive`  | Runs the tool in interactive mode.               |
+| `-md5`           | Crack an MD5 hash.                               |
+| `-sha1`          | Crack a SHA1 hash.                               |
+| `-sha224`        | Crack a SHA224 hash.                             |
+| `-sha384`        | Crack a SHA384 hash.                             |
+| `-sha512`        | Crack a SHA512 hash.                             |
+| `--wordlist [file]` | Specify the wordlist file.                    |
+| `-t [hash]`      | Specify the target hash.                         |
+| `--f [file]`     | Specify a file containing multiple hashes.       |
+
 
   `python hash_cracker.py -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99`
 
@@ -59,7 +74,13 @@ Additionally, you need to specify:
   SHA224: `-sha224`
   SHA384: `-sha384`
   SHA512: `-sha512`
-  
+| Hash Type | Option  |
+|-----------|---------|
+| MD5       | -md5    |
+| SHA1      | -sha1   |
+| SHA224    | -sha224 |
+| SHA384    | -sha384 |
+| SHA512    | -sha512 |
 
 ## 🛠️ Requirements
 - Python 3.13.1 or later
@@ -69,8 +90,9 @@ Additionally, you need to specify:
   - `hashlib`
   - `readline`
 Install the required dependencies:
-
-   `pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
