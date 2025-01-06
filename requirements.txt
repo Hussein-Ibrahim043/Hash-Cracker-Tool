@@ -1,0 +1,4 @@
+argparse
+colorama
+os-sys
+readline
