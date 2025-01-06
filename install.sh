@@ -1,5 +1,6 @@
-###Disclaimer
-#This tool is intended for educational purposes and ethical security testing only. Unauthorized use of this tool is prohibited.
+### Disclaimer
+# This tool is intended for educational purposes and ethical security testing only.
+# Unauthorized use of this tool is prohibited.
 
 #!/bin/bash
 
@@ -33,11 +34,11 @@ fi
 # Check for requirements.txt and install dependencies
 if [ -f "$REQUIREMENTS_FILE" ]; then
     echo "Found requirements.txt. Installing dependencies..."
-    pip install -r "$REQUIREMENTS_FILE"
+    pip install --quiet -r "$REQUIREMENTS_FILE"
     if [ $? -eq 0 ]; then
         echo "Dependencies installed successfully."
     else
-        echo "Failed to install dependencies. Please check the requirements.txt file."
+        echo "Some dependencies might already be installed or there was an issue. Please check the requirements.txt file."
     fi
 else
     echo "No requirements.txt file found. Skipping dependency installation."
