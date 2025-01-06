@@ -22,10 +22,13 @@ This project is a powerful and flexible command-line tool for cracking various h
 - Auto-completion for file paths using `readline`.
 
 
-- **Interactive Mode**: Run the tool in interactive mode using the --interactive flag:
-          `python hash_cracker.py --interactive`
+- **Interactive Mode**: Run the tool in interactive mode using the `--interactive` flag:
+      - `python hash_cracker.py --interactive`
+  
 - **CLI Mode**
-  `python hash_cracker.py [OPTIONS]`
+      - `python hash_cracker.py [OPTIONS]`
+
+  
 -**Available Arguments:**
   --interactive: Runs the tool in interactive mode.
   -md5: Crack MD5 hash.
