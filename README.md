@@ -45,15 +45,22 @@ python hash_cracker.py [OPTIONS]
   - `-t [hash]`: Specify the target hash.
   - `--f [file]`: Specify a file containing multiple hashes.
 
+---
 ### Examples:
+
+#### Crack a Single MD5 Hash:
 ```bash
-  python hash_cracker.py -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
+hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
 ```
 
-Additionally, you need to specify:
-`--wordlist` for the wordlist file.
-`-t` for the target hash.
-`--f` for a file containing multiple hashes.
+#### Crack Multiple SHA1 Hashes from a File:
+```bash
+hashcracker -sha1 --wordlist rockyou.txt --f hashes.txt
+```
+**Additionally, you need to specify**:
+ - `--wordlist` for the wordlist file.
+ - `-t` for the target hash.
+ - `--f` for a file containing multiple hashes.
 
 ---
 
@@ -123,19 +130,7 @@ The alias `hashcracker` will be created for the tool.
    - `--f`: Provide a file containing multiple hashes.
 
      
-### Examples:
-
-#### Crack a Single MD5 Hash:
-```bash
-hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
-```
-
-#### Crack Multiple SHA1 Hashes from a File:
-```bash
-hashcracker -sha1 --wordlist rockyou.txt --f hashes.txt
-```
-               ```
-          
+        
 ---
 
 ## 🛡️ Troubleshooting
