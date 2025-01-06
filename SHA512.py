@@ -4,13 +4,13 @@ def SHA512(wordlist_path, target_hash=None, hash_file=None):
 
     try:
         # Read the wordlist file
-        with open(wordlist_path, 'r') as file:
+        with open(wordlist_path, 'r', encoding='utf-8', errors='ignore') as file:
             wordlist = file.read().splitlines()
 
         # Read hashes from file if provided
         if hash_file:
             try:
-                with open(hash_file, 'r') as f:
+                with open(hash_file, 'r', encoding='utf-8', errors='ignore') as f:
                     hashes_to_check = f.read().splitlines()
             except FileNotFoundError:
                 print(f"\033[1;31mError: Hash file '{hash_file}' not found.\033[0m")
