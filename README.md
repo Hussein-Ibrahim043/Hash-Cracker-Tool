@@ -23,9 +23,9 @@ This project is a powerful and flexible command-line tool for cracking various h
 
 
 - **Interactive Mode**: Run the tool in interactive mode using the --interactive flag:
-          python hash_cracker.py --interactive
+          `python hash_cracker.py --interactive`
 - **CLI Mode**
-  python hash_cracker.py [OPTIONS]
+  `python hash_cracker.py [OPTIONS]`
 -**Available Arguments:**
   --interactive: Runs the tool in interactive mode.
   -md5: Crack MD5 hash.
@@ -37,22 +37,22 @@ This project is a powerful and flexible command-line tool for cracking various h
   -t [hash]: Specify the target hash.
   --f [file]: Specify a file containing multiple hashes.
 
-  python hash_cracker.py -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
+  `python hash_cracker.py -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99`
 
 
 Additionally, you need to specify:
---wordlist for the wordlist file.
--t for the target hash.
---f for a file containing multiple hashes.
+`--wordlist` for the wordlist file.
+`-t` for the target hash.
+`--f` for a file containing multiple hashes.
 
 ---
 
 ## Supported Hash Algorithms
-  MD5: -md5
-  SHA1: -sha1
-  SHA224: -sha224
-  SHA384: -sha384
-  SHA512: -sha512
+  MD5: `-md5`
+  SHA1: `-sha1`
+  SHA224: `-sha224`
+  SHA384: `-sha384`
+  SHA512: `-sha512`
   
 
 ## 🛠️ Requirements
@@ -64,7 +64,7 @@ Additionally, you need to specify:
   - `readline`
 Install the required dependencies:
 
-   pip install -r requirements.txt
+   `pip install -r requirements.txt`
 
 ---
 
@@ -75,40 +75,40 @@ Install the required dependencies:
    Clone the GitHub repository to your local machine:
 
    ```bash
-   git clone https://github.com/Hussein-Ibrahim043/Hash-Cracker-Tool.git
+   `git clone https://github.com/Hussein-Ibrahim043/Hash-Cracker-Tool.git`
 
 2. Run the provided install.sh script to install the tool and set up an alias for easy usage.
 
-   cd Hash-Cracker-Tool
+   `cd Hash-Cracker-Tool`
 
 4. Run install.sh :
 
-   sudo bash install.sh
+   `sudo bash install.sh`
    
-The alias hashcracker will be created for the tool.
+The alias `hashcracker` will be created for the tool.
 
 ---
 
 ## 🚀 How to Use
 1. Interactive Mode:
    Launch the script from the terminal:
-     - hashcracker --interactive
+     - `hashcracker --interactive`
 2. Command-Line Arguments:
-   - hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
+   - `hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99`
    **Command-Line Options**:
-     -md5: Crack an MD5 hash.
-     -sha1: Crack a SHA1 hash.
-     -sha224: Crack a SHA224 hash.
-     -sha384: Crack a SHA384 hash.
-     -sha512: Crack a SHA512 hash.
-     --wordlist: Specify the path to the wordlist.
-     -t: Provide a single target hash.
+     -`md5`: Crack an MD5 hash.
+     -`sha1`: Crack a SHA1 hash.
+     -`sha224`: Crack a SHA224 hash.
+     -`sha384`: Crack a SHA384 hash.
+     -`sha512`: Crack a SHA512 hash.
+     --`wordlist`: Specify the path to the wordlist.
+     `-t`: Provide a single target hash.
      --f: Provide a file containing multiple hashes.
 **Examples**:
           1. Crack a single MD5 hash:
-               hashcracker -md5 --wordlist wordlist.txt -t d41d8cd98f00b204e9800998ecf8427e
+               `hashcracker -md5 --wordlist wordlist.txt -t d41d8cd98f00b204e9800998ecf8427e`
           2.Crack multiple SHA1 hashes from a file:
-               hashcracker -sha1 --wordlist wordlist.txt --f hashes.txt
+               `hashcracker -sha1 --wordlist wordlist.txt --f hashes.txt`
           
 ---
 
