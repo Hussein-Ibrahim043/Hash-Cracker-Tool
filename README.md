@@ -24,10 +24,12 @@ This project is a powerful and flexible command-line tool for cracking various h
 
 - **Interactive Mode**: Run the tool in interactive mode using the `--interactive` flag:
 ```bash
-  - python hash_cracker.py --interactive
-  
+- python hash_cracker.py --interactive
+
+
 - **CLI Mode**
-      - `python hash_cracker.py [OPTIONS]`
+```bash
+- python hash_cracker.py [OPTIONS]
 
   
 -**Available Arguments:**
@@ -79,7 +81,7 @@ Install the required dependencies:
    Clone the GitHub repository to your local machine:
 
    ```bash
-   `git clone https://github.com/Hussein-Ibrahim043/Hash-Cracker-Tool.git`
+   git clone https://github.com/Hussein-Ibrahim043/Hash-Cracker-Tool.git
 
 2. Run the provided install.sh script to install the tool and set up an alias for easy usage.
 
