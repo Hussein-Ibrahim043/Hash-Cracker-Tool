@@ -23,7 +23,8 @@ This project is a powerful and flexible command-line tool for cracking various h
 
 
 - **Interactive Mode**: Run the tool in interactive mode using the `--interactive` flag:
-      - `python hash_cracker.py --interactive`
+```bash
+  - python hash_cracker.py --interactive
   
 - **CLI Mode**
       - `python hash_cracker.py [OPTIONS]`
