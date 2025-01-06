@@ -96,12 +96,12 @@ pip install -r requirements.txt
    git clone https://github.com/Hussein-Ibrahim043/Hash-Cracker-Tool.git
 
 2. Run the provided install.sh script to install the tool and set up an alias for easy usage.
-```bash
+   ```bash
    cd Hash-Cracker-Tool
-```
+   ```
 
 4. Run install.sh :
-  ```bash
+   ```bash
    sudo bash install.sh
    ```
    
