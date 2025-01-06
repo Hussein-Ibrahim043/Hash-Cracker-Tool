@@ -100,13 +100,13 @@ pip install -r requirements.txt
    cd Hash-Cracker-Tool
    ```
 3. Run the following command to make the script executable:
-  - ```bash
+   ```bash
     chmod +x install.sh
     ```
 5.  Run install.sh :
-   ```bash
-   sudo bash install.sh
-   ```
+    ```bash
+    sudo bash install.sh
+    ```
    
 The alias `hashcracker` will be created for the tool.
 
