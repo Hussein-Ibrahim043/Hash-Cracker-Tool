@@ -8,30 +8,45 @@ This project is a powerful and flexible command-line tool for cracking various h
 ---
 
 ## ✨Features
+- Supports multiple hash algorithms:
+  - **MD5**
+  - **SHA1**
+  - **SHA224**
+  - **SHA384**
+  - **SHA512**
+- Two operation modes:
+  - **Interactive Mode**: User-friendly mode for manual inputs.
+  - **CLI Mode**: Efficient for automation and scripting.
+- Wordlist-based cracking.
+- Ability to handle single hashes or files containing multiple hashes.
+- Auto-completion for file paths using `readline`.
 
-- **Random Banner Display**: The tool will display one of three random banners every time it's run, providing a dynamic and personalized experience.
-- **Colorful Output**: Color-coded output for better readability and a pleasant user experience.
-- **Customizable Banners**: The banners are displayed using ASCII art, allowing for different styles and customization options.
-- **User Information**: Displays creator information, version, and social media links for easy access.
-- **Interactive Mode**:When the script is run without arguments, it enters interactive mode, where the user can:
-          Choose the hash algorithm (MD5, SHA1, SHA224, SHA384, or SHA512).
-          Provide a wordlist file location.
-          Specify whether to crack a single hash or multiple hashes from a file.
-  
-- **Command-line Mode**
-You can also use the tool in command-line mode by specifying flags:
 
--md5 to crack MD5 hashes.
--sha1 to crack SHA1 hashes.
--sha224 to crack SHA224 hashes.
--sha512 to crack SHA512 hashes.
--sha384 to crack SHA384 hashes.
+- **Interactive Mode**: Run the tool in interactive mode using the --interactive flag:
+          python hash_cracker.py --interactive
+- **CLI Mode**
+  python hash_cracker.py [OPTIONS]
+-**Available Arguments:**
+  --interactive: Runs the tool in interactive mode.
+  -md5: Crack MD5 hash.
+  -sha1: Crack SHA1 hash.
+  -sha224: Crack SHA224 hash.
+  -sha384: Crack SHA384 hash.
+  -sha512: Crack SHA512 hash.
+  --wordlist [file]: Specify the wordlist file.
+  -t [hash]: Specify the target hash.
+  --f [file]: Specify a file containing multiple hashes.
+
+  python hash_cracker.py -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
+
 
 Additionally, you need to specify:
 --wordlist for the wordlist file.
 -t for the target hash.
 --f for a file containing multiple hashes.
+
 ---
+
 ## Supported Hash Algorithms
   MD5: -md5
   SHA1: -sha1
@@ -41,62 +56,60 @@ Additionally, you need to specify:
   
 
 ## 🛠️ Requirements
-
 - Python 3.13.1 or later
 - Required libraries:
   - `argparse`
   - `colorama`
   - `hashlib`
   - `readline`
+Install the required dependencies:
+
+   pip install -r requirements.txt
 
 ---
 
 ## Installation
 
-1. Clone the Repository**:
+1. Clone the Repository:
 
    Clone the GitHub repository to your local machine:
 
    ```bash
    git clone https://github.com/Hussein-Ibrahim043/Hash-Cracker-Tool.git
 
-3. Navigate to the project directory:
+2. Run the provided install.sh script to install the tool and set up an alias for easy usage.
 
    cd Hash-Cracker-Tool
 
-4. Install the required dependencies:
+4. Run install.sh :
 
-   pip install -r requirements.txt
+   sudo bash install.sh
+   
+The alias hashcracker will be created for the tool.
 
 ---
 
 ## 🚀 How to Use
-1. Run the Python Script:
+1. Interactive Mode:
    Launch the script from the terminal:
-     - python hash_cracker_tool.py
-   Or, if you've set up the alias:
-     - hashcrack
-2. Provide IP Addresses:
-   - You’ll be prompted to enter the Source IP and Destination IP.
-- The script will send an ICMP packet from the source to the destination and log the results.
-3. Sample Output:
-  After you input the IP addresses, the script will:
-    - Send the ICMP packet.
-    - Capture and log the response (if received).
-    - Store detailed logs of sent and received packets in packet_logs.txt.
-
----
-
-## 📝 Example Log (packet_logs.txt)
-
-
-
----
-
-## 🔧 Logging and Debugging
-- Logs are saved automatically in `packet_logs.txt` with timestamps.
-- These logs include both sent and received packet details as well as any errors encountered during packet transmission.
-
+     - hashcracker --interactive
+2. Command-Line Arguments:
+   - hashcracker -md5 --wordlist rockyou.txt -t 5f4dcc3b5aa765d61d8327deb882cf99
+   **Command-Line Options**:
+     -md5: Crack an MD5 hash.
+     -sha1: Crack a SHA1 hash.
+     -sha224: Crack a SHA224 hash.
+     -sha384: Crack a SHA384 hash.
+     -sha512: Crack a SHA512 hash.
+     --wordlist: Specify the path to the wordlist.
+     -t: Provide a single target hash.
+     --f: Provide a file containing multiple hashes.
+**Examples**:
+          1. Crack a single MD5 hash:
+               hashcracker -md5 --wordlist wordlist.txt -t d41d8cd98f00b204e9800998ecf8427e
+          2.Crack multiple SHA1 hashes from a file:
+               hashcracker -sha1 --wordlist wordlist.txt --f hashes.txt
+          
 ---
 
 ## 🛡️ Troubleshooting
@@ -120,4 +133,5 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Author
 
-- Hussein Ibrahim (https://github.com/Hussein-Ibrahim043)
+- GitHub (https://github.com/Hussein-Ibrahim043)
+- LinkedIn (https://linkedin.com/in/hussein-ibrahim043)
